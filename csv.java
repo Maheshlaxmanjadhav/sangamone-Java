@@ -6,7 +6,7 @@ import java.io.FileReader;
 public class csv {
 	public static void main(String[] args) {
 		try {
-			BufferedReader br=new BufferedReader(new FileReader("src\\city.csv"));
+			BufferedReader br=new BufferedReader(new FileReader("city.csv"));
 			String s;
 			while((s=br.readLine())!=null) {
 				System.out.println(s);
