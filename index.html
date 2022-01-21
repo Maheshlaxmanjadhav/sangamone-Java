@@ -16,6 +16,15 @@
       li{
           display: inline-block;
       }
+      @media(max-width:600px){
+          li{
+              font-size:xx-small;
+          }
+          img{
+              width: 100%;
+              height: 100%;
+          }
+      }
   </style>
 </head>
 
@@ -27,51 +36,51 @@
         <p class="fs-5 text-center">I have Done some of the Java Assignments, here I am sharing my work</p>
       </div>
     </div>
-    <div class="row border bg-light shadow p-4 rounded-3">
+    <div class="row border bg-light shadow p-1 rounded-3">
       <div class="col-auto">
         <ul class="text-dark"><span class="fw-bold">Java Assignments</span>
           <hr>
           <li><a href="programs/Pass.java" class="text-decoration-none text-danger">Password generator</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="passwordPro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="passwordOut()">Output</button>
-          <img src="images/passwordProgram.JPG" alt="img" style="display:none" id="image1">
-          <img src="images/passwordOutput.JPG" alt="img" style="display:none" id="image1out"><br><br>
+          <img src="images/passwordProgram.JPG" alt="img" style="display:none" id="image1" class="image-fluid">
+          <img src="images/passwordOutput.JPG" alt="img" style="display:none" id="image1out" class="image-fluid"><br><br>
 
           <li><a href="programs/pincode.java" class="text-decoration-none text-danger">Pincode</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="pincodePro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="pincodeOut()">Output</button>
-          <img src="images/pincodeProgram.JPG" alt="img" style="display:none" id="pin1pro">
-          <img src="images/pincodeOutput.JPG" alt="img" style="display:none" id="pin1out"><br><br>
+          <img src="images/pincodeProgram.JPG" alt="img" style="display:none" id="pin1pro" class="image-fluid">
+          <img src="images/pincodeOutput.JPG" alt="img" style="display:none" id="pin1out" class="image-fluid"><br><br>
 
           <li><a href="programs/csv.java" class="text-decoration-none text-danger">Read CSV File</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="csvPro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="csvOut()">Output</button>
-          <img src="images/csvPro.JPG" alt="img" style="display:none" id="csvPro">
-          <img src="images/csvOut.JPG" alt="img" style="display:none" id="csvOut"><br><br>
+          <img src="images/csvPro.JPG" alt="img" style="display:none" id="csvPro" class="image-fluid">
+          <img src="images/csvOut.JPG" alt="img" style="display:none" id="csvOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringing.java" class="text-decoration-none text-danger">Phone Ringing</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="phonePro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="phoneOut()">Output</button>
-          <img src="images/phonePro.JPG" alt="img" style="display:none" id="phonePro">
-          <img src="images/phoneOut.JPG" alt="img" style="display:none" id="phoneOut"><br><br>
+          <img src="images/phonePro.JPG" alt="img" style="display:none" id="phonePro" class="image-fluid">
+          <img src="images/phoneOut.JPG" alt="img" style="display:none" id="phoneOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Phone Ringing using Switch</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="phoneSwPro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="phoneSwOut()">Output</button>
-          <img src="images/phoneSwitchPro.JPG" alt="img" style="display:none" id="phoneSwPro">
-          <img src="images/phoneSwitchOut.JPG" alt="img" style="display:none" id="phoneSwOut"><br><br>
+          <img src="images/phoneSwitchPro.JPG" alt="img" style="display:none" id="phoneSwPro" class="image-fluid">
+          <img src="images/phoneSwitchOut.JPG" alt="img" style="display:none" id="phoneSwOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Square Of Number</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="squarePro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="squareOut()">Output</button>
-          <img src="images/squarePro.JPG" alt="img" style="display:none" id="squarePro">
-          <img src="images/squareOut.JPG" alt="img" style="display:none" id="squareOut"><br><br>
+          <img src="images/squarePro.JPG" alt="img" style="display:none" id="squarePro" class="image-fluid">
+          <img src="images/squareOut.JPG" alt="img" style="display:none" id="squareOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Square Root Of Number</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="squareRootPro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="squareRootOut()">Output</button>
-          <img src="images/squareRootPro.JPG" alt="img" style="display:none" id="squareRootPro">
-          <img src="images/squareRootOut.JPG" alt="img" style="display:none" id="squareRootOut"><br><br>
+          <img src="images/squareRootPro.JPG" alt="img" style="display:none" id="squareRootPro" class="image-fluid">
+          <img src="images/squareRootOut.JPG" alt="img" style="display:none" id="squareRootOut" class="image-fluid"><br><br>
 
           <script>
               function passwordPro(){
