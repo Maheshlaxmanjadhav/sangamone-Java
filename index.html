@@ -12,6 +12,11 @@
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <title>Assignments</title>
+  <style>
+      li{
+          display: inline-block;
+      }
+  </style>
 </head>
 
 <body class="bg-info">
@@ -22,14 +27,172 @@
         <p class="fs-5 text-center">I have Done some of the Java Assignments, here I am sharing my work</p>
       </div>
     </div>
-    <div class="row border bg-light shadow p-4 justify-content-center rounded-3">
+    <div class="row border bg-light shadow p-4 rounded-3">
       <div class="col-auto">
         <ul class="text-dark"><span class="fw-bold">Java Assignments</span>
           <hr>
-          <li><a href="test.zip" class="text-decoration-none text-danger">Practice-1</a></li>
-          <li><a href="Pass.java" class="text-decoration-none text-danger">Password generator</a></li>
-          <li><a href="pincode.java" class="text-decoration-none text-danger">pincode</a></li>
-          <li><a href="csv.java" class="text-decoration-none text-danger">Read File</a></li>
+          <li><a href="programs/Pass.java" class="text-decoration-none text-danger">Password generator</a></li>
+          <button type="button" id="btn" class="btn btn-primary" onclick="passwordPro()">Program</button>
+          <button type="button" id="btn1" class="btn btn-danger" onclick="passwordOut()">Output</button>
+          <img src="images/passwordProgram.JPG" alt="img" style="display:none" id="image1">
+          <img src="images/passwordOutput.JPG" alt="img" style="display:none" id="image1out"><br><br>
+
+          <li><a href="programs/pincode.java" class="text-decoration-none text-danger">Pincode</a></li>
+          <button type="button" id="btn" class="btn btn-primary" onclick="pincodePro()">Program</button>
+          <button type="button" id="btn1" class="btn btn-danger" onclick="pincodeOut()">Output</button>
+          <img src="images/pincodeProgram.JPG" alt="img" style="display:none" id="pin1pro">
+          <img src="images/pincodeOutput.JPG" alt="img" style="display:none" id="pin1out"><br><br>
+
+          <li><a href="programs/csv.java" class="text-decoration-none text-danger">Read CSV File</a></li>
+          <button type="button" id="btn" class="btn btn-primary" onclick="csvPro()">Program</button>
+          <button type="button" id="btn1" class="btn btn-danger" onclick="csvOut()">Output</button>
+          <img src="images/csvPro.JPG" alt="img" style="display:none" id="csvPro">
+          <img src="images/csvOut.JPG" alt="img" style="display:none" id="csvOut"><br><br>
+
+          <li><a href="programs/ringing.java" class="text-decoration-none text-danger">Phone Ringing</a></li>
+          <button type="button" id="btn" class="btn btn-primary" onclick="phonePro()">Program</button>
+          <button type="button" id="btn1" class="btn btn-danger" onclick="phoneOut()">Output</button>
+          <img src="images/phonePro.JPG" alt="img" style="display:none" id="phonePro">
+          <img src="images/phoneOut.JPG" alt="img" style="display:none" id="phoneOut"><br><br>
+
+          <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Phone Ringing using Switch</a></li>
+          <button type="button" id="btn" class="btn btn-primary" onclick="phoneSwPro()">Program</button>
+          <button type="button" id="btn1" class="btn btn-danger" onclick="phoneSwOut()">Output</button>
+          <img src="images/phoneSwitchPro.JPG" alt="img" style="display:none" id="phoneSwPro">
+          <img src="images/phoneSwitchOut.JPG" alt="img" style="display:none" id="phoneSwOut"><br><br>
+
+          <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Square Of Number</a></li>
+          <button type="button" id="btn" class="btn btn-primary" onclick="squarePro()">Program</button>
+          <button type="button" id="btn1" class="btn btn-danger" onclick="squareOut()">Output</button>
+          <img src="images/squarePro.JPG" alt="img" style="display:none" id="squarePro">
+          <img src="images/squareOut.JPG" alt="img" style="display:none" id="squareOut"><br><br>
+
+          <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Square Root Of Number</a></li>
+          <button type="button" id="btn" class="btn btn-primary" onclick="squareRootPro()">Program</button>
+          <button type="button" id="btn1" class="btn btn-danger" onclick="squareRootOut()">Output</button>
+          <img src="images/squareRootPro.JPG" alt="img" style="display:none" id="squareRootPro">
+          <img src="images/squareRootOut.JPG" alt="img" style="display:none" id="squareRootOut"><br><br>
+
+          <script>
+              function passwordPro(){
+                  var x=document.getElementById("image1");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+              function passwordOut(){
+                var x=document.getElementById("image1out");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+
+              function pincodePro(){
+                var x=document.getElementById("pin1pro");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+              function pincodeOut(){
+                var x=document.getElementById("pin1out");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+
+              function csvPro(){
+                var x=document.getElementById("csvPro");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+              function csvOut(){
+                var x=document.getElementById("csvOut");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+
+              function phonePro(){
+                var x=document.getElementById("phonePro");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+              function phoneOut(){
+                var x=document.getElementById("phoneOut");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+
+              function phoneSwPro(){
+                var x=document.getElementById("phoneSwPro");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+              function phoneSwOut(){
+                var x=document.getElementById("phoneSwOut");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+
+              function squarePro(){
+                var x=document.getElementById("squarePro");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+              function squareOut(){
+                var x=document.getElementById("squareOut");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+
+              function squareRootPro(){
+                var x=document.getElementById("squareRootPro");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+              function squareRootOut(){
+                var x=document.getElementById("squareRootOut");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+          </script>
         </ul>
       </div>
     </div>
