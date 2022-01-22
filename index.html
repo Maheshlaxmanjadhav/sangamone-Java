@@ -43,43 +43,209 @@
           <li><a href="programs/Pass.java" class="text-decoration-none text-danger">Password generator</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="passwordPro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="passwordOut()">Output</button>
-          <img src="images/passwordProgram.JPG" alt="img" style="display:none" id="image1" class="image-fluid">
+          <div style="display: none;" id="image1">
+          <pre>
+            package password1;
+            import java.util.Random;
+            public class Pass {
+              public static void main(String[] args) {
+              String capital= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+                String small= "abcdefghijklmnopqrstuvwxyz";
+                String num= "0123456789";
+                String special= "$%&@!()?";
+                String combine=capital+small+num+special;
+                Random r=new Random();
+                char[] pass=new char[10];
+                for(int i=0;i<10;i++) {
+                  for(int j=0;j<10;j++) {
+                    pass[j]=combine.charAt(r.nextInt(combine.length()));
+                  }
+                System.out.println(pass);
+                }
+            }
+            }   
+          </pre>         
+          </div>
           <img src="images/passwordOutput.JPG" alt="img" style="display:none" id="image1out" class="image-fluid"><br><br>
 
           <li><a href="programs/pincode.java" class="text-decoration-none text-danger">Pincode</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="pincodePro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="pincodeOut()">Output</button>
-          <img src="images/pincodeProgram.JPG" alt="img" style="display:none" id="pin1pro" class="image-fluid">
+          <div style="display: none;" id="pin1pro">
+            <pre>
+              package location;
+              import java.util.Scanner;
+              public class pincode {
+		          public static void main(String[] args) {
+		          Scanner sc=new Scanner(System.in);
+		          System.out.println("Enter the pincode to find the location:");
+		          int a=sc.nextInt();
+		          if(a==762104) {
+			        String name="Daringbadi, orissa";
+			        System.out.println("The location name for the pincode is:"+name);
+		          }else
+			        System.out.println("Invalid pincode");
+	            }
+              }
+
+            </pre>
+          </div>
           <img src="images/pincodeOutput.JPG" alt="img" style="display:none" id="pin1out" class="image-fluid"><br><br>
 
           <li><a href="programs/csv.java" class="text-decoration-none text-danger">Read CSV File</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="csvPro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="csvOut()">Output</button>
-          <img src="images/csvPro.JPG" alt="img" style="display:none" id="csvPro" class="image-fluid">
+          <div style="display: none;" id="csvPro"><br>
+          <pre>
+          package read;
+
+          import java.io.BufferedReader;
+          import java.io.FileReader;
+
+          public class csv {
+            public static void main(String[] args) {
+              try {
+                BufferedReader br=new BufferedReader(new FileReader("city.csv"));
+                String s;
+                while((s=br.readLine())!=null) {
+                  System.out.println(s);
+                }
+                br.close();
+              }catch(Exception ex){
+                return;			
+              }
+            }
+          }
+          </pre>
+          </div>
           <img src="images/csvOut.JPG" alt="img" style="display:none" id="csvOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringing.java" class="text-decoration-none text-danger">Phone Ringing</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="phonePro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="phoneOut()">Output</button>
-          <img src="images/phonePro.JPG" alt="img" style="display:none" id="phonePro" class="image-fluid">
+          <div style="display: none;" id="phonePro"><br>
+          <pre>
+            package phone;
+
+            import java.util.Scanner;
+
+            class ring {
+              public void ringing1() {
+                System.out.println("Your Phone is ringing");
+              }
+              public void vibrating() {
+                System.out.println("Your Phone is vibrating");
+              }
+            }
+            public class ringing{
+              public static void main(String[] args) {
+                ring rg=new ring();
+                Scanner sc=new Scanner(System.in);
+                System.out.println("1.ringing 2.vibrating");
+                System.out.println("Enter your Choice in words");
+                String str=sc.nextLine();
+                System.out.println("entered string is:"+str);
+                if(str.equals("ringing")) {
+                  rg.ringing1();}
+                else if(str.equals("vibrating")) {
+                  rg.vibrating();}
+                else {
+                 System.out.println("Enter correct choice");
+                 }
+              }
+            }
+          </pre>
+          </div>
           <img src="images/phoneOut.JPG" alt="img" style="display:none" id="phoneOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Phone Ringing using Switch</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="phoneSwPro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="phoneSwOut()">Output</button>
-          <img src="images/phoneSwitchPro.JPG" alt="img" style="display:none" id="phoneSwPro" class="image-fluid">
+          <div style="display: none;" id="phoneSwPro"><br>
+          <pre>
+            package phone;
+
+            import java.util.Scanner;
+            
+            class switchring {
+              public void ringing1() {
+                System.out.println("Your Phone is ringing");
+              }
+              public void vibrating() {
+                System.out.println("Your Phone is vibrating");
+              }
+            }
+            public class ringswitch {
+              public static void main(String[] args) {
+                ring rg=new ring();
+                Scanner sc=new Scanner(System.in);
+                System.out.println("1.ringing 2.vibrating");
+                System.out.println("Enter your Choice");
+                int a=sc.nextInt();
+                switch(a){
+                  case 1:rg.ringing1();break;
+                  case 2:rg.vibrating();break;
+                  default:System.out.println("Enter correct choice");	
+                }
+            }
+            }            
+          </pre>
+          </div>
           <img src="images/phoneSwitchOut.JPG" alt="img" style="display:none" id="phoneSwOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Square Of Number</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="squarePro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="squareOut()">Output</button>
-          <img src="images/squarePro.JPG" alt="img" style="display:none" id="squarePro" class="image-fluid">
+          <div style="display: none;" id="squarePro"><br>
+          <pre>
+            package phone;
+
+            import java.util.Scanner;
+            
+            class calculate{
+              public int sql(int a) {
+                return a*a;
+              }
+            }
+            public class square {
+              public static void main(String[] args) {
+                calculate cal=new calculate();
+                Scanner sc=new Scanner(System.in);
+                System.out.println("enter the number");
+                int b=sc.nextInt();
+                System.out.println("Square of "+b+" is:" +cal.sql(b));
+              }
+            }            
+          </pre>
+          </div>
           <img src="images/squareOut.JPG" alt="img" style="display:none" id="squareOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Square Root Of Number</a></li>
           <button type="button" id="btn" class="btn btn-primary" onclick="squareRootPro()">Program</button>
           <button type="button" id="btn1" class="btn btn-danger" onclick="squareRootOut()">Output</button>
-          <img src="images/squareRootPro.JPG" alt="img" style="display:none" id="squareRootPro" class="image-fluid">
+          <div style="display: none;" id="squareRootPro"><br>
+          <pre>
+            package phone;
+
+            import java.util.Scanner;
+            
+            class calculate1{
+              public int sql(int a) {
+                int c=(int) Math.sqrt(a);
+                return(c);
+              }
+            }
+            public class squartRoot {
+              public static void main(String[] args) {
+                calculate1 cal=new calculate1();
+                Scanner sc=new Scanner(System.in);
+                System.out.println("enter the number");
+                int b=sc.nextInt();
+                System.out.println("Square root of "+b+" is:" +cal.sql(b));
+              }
+            }            
+          </pre>
+          </div>
           <img src="images/squareRootOut.JPG" alt="img" style="display:none" id="squareRootOut" class="image-fluid"><br><br>
 
           <script>
@@ -206,7 +372,7 @@
       </div>
     </div>
   </div>
-
+<footer>
   <div class="row bg-dark mt-5">
     <div class="col-12 text-white text-center fw-bold h6">ABOUT ME</div>
   </div>
@@ -257,7 +423,7 @@
     </div>
   </div>
   </div>
-
+</footer>
 
   <!Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
