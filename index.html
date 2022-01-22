@@ -15,10 +15,18 @@
   <style>
       li{
           display: inline-block;
+          width: 70%;
+      }
+      button{
+        font-size: small;
       }
       @media(max-width:600px){
           li{
               font-size:xx-small;
+              width: 40%;
+          }
+          button{
+            font-size:xx-small;
           }
           img{
               width: 100%;
@@ -31,18 +39,18 @@
 <body class="bg-info">
   <div class="container">
     <div class="row my-5 justify-content-center">
-      <div class="col-6">
+      <div class="col">
         <h1 class="display-1 text-danger fw-bold text-center">My Portfolio</h1>
         <p class="fs-5 text-center">I have Done some of the Java Assignments, here I am sharing my work</p>
       </div>
     </div>
     <div class="row border bg-light shadow p-1 rounded-3">
-      <div class="col-auto">
+      <div class="col">
         <ul class="text-dark"><span class="fw-bold">Java Assignments</span>
           <hr>
           <li><a href="programs/Pass.java" class="text-decoration-none text-danger">Password generator</a></li>
-          <button type="button" id="btn" class="btn btn-primary" onclick="passwordPro()">Program</button>
-          <button type="button" id="btn1" class="btn btn-danger" onclick="passwordOut()">Output</button>
+          <button type="button" id="btn" class="btn-primary" onclick="passwordPro()">Program</button>
+          <button type="button" id="btn1" class="btn-warning" onclick="passwordOut()">Output</button>
           <div style="display: none;" id="image1">
           <pre>
             package password1;
@@ -69,8 +77,8 @@
           <img src="images/passwordOutput.JPG" alt="img" style="display:none" id="image1out" class="image-fluid"><br><br>
 
           <li><a href="programs/pincode.java" class="text-decoration-none text-danger">Pincode</a></li>
-          <button type="button" id="btn" class="btn btn-primary" onclick="pincodePro()">Program</button>
-          <button type="button" id="btn1" class="btn btn-danger" onclick="pincodeOut()">Output</button>
+          <button type="button" id="btn" class="btn-primary" onclick="pincodePro()">Program</button>
+          <button type="button" id="btn1" class="btn-warning" onclick="pincodeOut()">Output</button>
           <div style="display: none;" id="pin1pro">
             <pre>
               package location;
@@ -93,8 +101,8 @@
           <img src="images/pincodeOutput.JPG" alt="img" style="display:none" id="pin1out" class="image-fluid"><br><br>
 
           <li><a href="programs/csv.java" class="text-decoration-none text-danger">Read CSV File</a></li>
-          <button type="button" id="btn" class="btn btn-primary" onclick="csvPro()">Program</button>
-          <button type="button" id="btn1" class="btn btn-danger" onclick="csvOut()">Output</button>
+          <button type="button" id="btn" class="btn-primary" onclick="csvPro()">Program</button>
+          <button type="button" id="btn1" class="btn-warning" onclick="csvOut()">Output</button>
           <div style="display: none;" id="csvPro"><br>
           <pre>
           package read;
@@ -121,8 +129,8 @@
           <img src="images/csvOut.JPG" alt="img" style="display:none" id="csvOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringing.java" class="text-decoration-none text-danger">Phone Ringing</a></li>
-          <button type="button" id="btn" class="btn btn-primary" onclick="phonePro()">Program</button>
-          <button type="button" id="btn1" class="btn btn-danger" onclick="phoneOut()">Output</button>
+          <button type="button" id="btn" class="btn-primary" onclick="phonePro()">Program</button>
+          <button type="button" id="btn1" class="btn-warning" onclick="phoneOut()">Output</button>
           <div style="display: none;" id="phonePro"><br>
           <pre>
             package phone;
@@ -159,8 +167,8 @@
           <img src="images/phoneOut.JPG" alt="img" style="display:none" id="phoneOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Phone Ringing using Switch</a></li>
-          <button type="button" id="btn" class="btn btn-primary" onclick="phoneSwPro()">Program</button>
-          <button type="button" id="btn1" class="btn btn-danger" onclick="phoneSwOut()">Output</button>
+          <button type="button" id="btn" class="btn-primary" onclick="phoneSwPro()">Program</button>
+          <button type="button" id="btn1" class="btn-warning" onclick="phoneSwOut()">Output</button>
           <div style="display: none;" id="phoneSwPro"><br>
           <pre>
             package phone;
@@ -194,8 +202,8 @@
           <img src="images/phoneSwitchOut.JPG" alt="img" style="display:none" id="phoneSwOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Square Of Number</a></li>
-          <button type="button" id="btn" class="btn btn-primary" onclick="squarePro()">Program</button>
-          <button type="button" id="btn1" class="btn btn-danger" onclick="squareOut()">Output</button>
+          <button type="button" id="btn" class="btn-primary" onclick="squarePro()">Program</button>
+          <button type="button" id="btn1" class="btn-warning" onclick="squareOut()">Output</button>
           <div style="display: none;" id="squarePro"><br>
           <pre>
             package phone;
@@ -221,8 +229,8 @@
           <img src="images/squareOut.JPG" alt="img" style="display:none" id="squareOut" class="image-fluid"><br><br>
 
           <li><a href="programs/ringswitch.java" class="text-decoration-none text-danger">Square Root Of Number</a></li>
-          <button type="button" id="btn" class="btn btn-primary" onclick="squareRootPro()">Program</button>
-          <button type="button" id="btn1" class="btn btn-danger" onclick="squareRootOut()">Output</button>
+          <button type="button" id="btn" class="btn-primary" onclick="squareRootPro()">Program</button>
+          <button type="button" id="btn1" class="btn-warning" onclick="squareRootOut()">Output</button>
           <div style="display: none;" id="squareRootPro"><br>
           <pre>
             package phone;
