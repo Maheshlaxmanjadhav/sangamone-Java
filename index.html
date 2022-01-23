@@ -256,6 +256,47 @@
           </div>
           <img src="images/squareRootOut.JPG" alt="img" style="display:none" id="squareRootOut" class="image-fluid"><br><br>
 
+          <li><a href="programs/guessGame.java" class="text-decoration-none text-danger">Guess The Number</a></li>
+          <button type="button" id="btn" class="btn-primary" onclick="GuessPro()">Program</button>
+          <button type="button" id="btn1" class="btn-warning" onclick="GuessOut()">Output</button>
+          <div style="display: none;" id="GuessPro"><br>
+            <pre>
+            import java.util.Scanner;
+
+            class Ggame{
+              Ggame(){
+                int a=(int)(Math.random()*(100-1+1)+1);
+                Scanner sc=new Scanner(System.in);
+                System.out.println("Guess Your number between 1 and 100");
+                int num=sc.nextInt();
+                boolean found=false;
+                while(!found) {
+                if(num>a) {
+                  System.out.println("Too big, Try again");
+                      num=sc.nextInt();
+                }
+                else if(num<a)
+                  <pre>System.out.println("Too small, Try again");
+                  num=sc.nextInt();
+                }
+                else if(num==a) {
+                  System.out.println("congratulation");
+                  System.out.println("Guess number: "+num+"\nComputer Number: "+a);
+                  found=true;
+                }
+                }
+                
+              }
+            }
+            public class guessGame {
+              public static void main(String[] args) {
+                Ggame g=new Ggame();
+              }
+            }</pre>
+          </pre>
+          </div>
+          <img src="images/guessOut.JPG" alt="img" style="display:none" id="squareRootOut" class="image-fluid"><br><br>
+
           <script>
               function passwordPro(){
                   var x=document.getElementById("image1");
@@ -369,6 +410,23 @@
               }
               function squareRootOut(){
                 var x=document.getElementById("squareRootOut");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+
+              function GuessPro(){
+                var x=document.getElementById("GuessPro");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+              function GuessOut(){
+                var x=document.getElementById("GuessOut");
                   if(x.style.display === "none"){
                       x.style.display = "block";
                   }else{
