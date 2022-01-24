@@ -297,6 +297,39 @@
           </div>
           <img src="images/guessOut.JPG" alt="img" style="display:none" id="guessOut" class="image-fluid"><br><br>
 
+          <li><a href="programs/animals.java" class="text-decoration-none text-danger">Inheritance-Animal</a></li>
+          <button type="button" id="btn" class="btn-primary" onclick="AnimalPro()">Program</button>
+          <button type="button" id="btn1" class="btn-warning" onclick="AnimalOut()">Output</button>
+          <div style="display: none;" id="AnimalPro"><br>
+          <pre>
+            class animal{
+              public void tail() {
+                System.out.println("I have a trail");
+              }
+              public void bark() {
+                System.out.println("I will bark");
+              }
+            }
+            
+            class dog extends animal{
+              public void color() {
+                System.out.println("my color is black");
+              }
+            }
+            
+            
+            public class animals {
+              public static void main(String[] args) {
+                dog d=new dog();
+                d.color();
+                d.tail();
+                d.bark();
+              }
+            }            
+          </pre>
+          </div>
+          <img src="images/animalOut.JPG" alt="img" style="display:none" id="AnimalOut" class="image-fluid"><br><br>
+
           <script>
               function passwordPro(){
                   var x=document.getElementById("image1");
@@ -427,6 +460,23 @@
               }
               function GuessOut(){
                 var x=document.getElementById("guessOut");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+
+              function AnimalPro(){
+                var x=document.getElementById("AnimalPro");
+                  if(x.style.display === "none"){
+                      x.style.display = "block";
+                  }else{
+                    x.style.display = "none";
+                  }
+              }
+              function AnimalOut(){
+                var x=document.getElementById("AnimalOut");
                   if(x.style.display === "none"){
                       x.style.display = "block";
                   }else{
